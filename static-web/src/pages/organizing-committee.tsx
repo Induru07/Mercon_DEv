@@ -1,0 +1,386 @@
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import SectionHeader from "../components/sectionHeader";
+import SpeakerRankGraph, { SpeakerLevel } from "../components/speakerRankGraph";
+import { createPageHead } from "../components/pageHead";
+
+const speakerLevels: SpeakerLevel[] = [
+  // {
+  //   levelName: "Honorary Chair",
+  //   rank: 1,
+  //   speakers: [
+  //     {
+  //       name: "",
+  //       image: <StaticImage src="../images/committee/Prof..png" alt="" className="w-full h-full" objectFit="contain" />,
+  //     },
+  //   ],
+  // },
+  {
+    levelName: "Conference Chair",
+    rank: 1,
+    speakers: [
+      {
+        name: "Prof. Lidula N. Widanagama Arachchige",
+        image: (
+          <StaticImage
+            src="../images/committee/Prof.Lidula.N.Widanagama.Arachchige.png"
+            alt="Prof. Lidula N. Widanagama Arachchige"
+            className="w-full h-full"
+            objectFit="contain"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Technical Program Committee Chair",
+    rank: 2,
+    speakers: [
+      {
+        name: "Dr. Chamira Edussooriya ",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Chamira.Edussooriya.png"
+            alt="Dr. Chamira Edussooriya "
+            className="w-full h-full"
+            objectFit="contain"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Organizing Committee Chair",
+    rank: 3,
+    speakers: [
+      {
+        name: "Dr. Rasara Samarasinghe",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Rasara.Samarasinghe.png"
+            alt="Dr. Rasara Samarasinghe"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Program Co-Chairs",
+    rank: 4,
+    speakers: [
+      {
+        name: "Dr. Lihil Uthpala",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Lihil.png"
+            alt="Dr. Lihil Uthpala"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Biman Hettiarachchi",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Biman.Hettiarachchi.png"
+            alt="Dr. Biman Hettiarachchi"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Samiru Gayan",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Samiru.Gayan.png"
+            alt="Dr. Samiru Gayan"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Publication Chair",
+    rank: 5,
+    speakers: [
+      {
+        name: "Dr. Dumith Jayathilaka",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Dumith.Jayathilake.png"
+            alt="Dr. Dumith Jayathilaka"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Publication Co-Chairs",
+    rank: 5,
+    speakers: [
+      {
+        name: "Dr. Jayani Sudusinghe",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Jayani.Sudusinghe.png"
+            alt="Dr. Jayani Sudusinghe"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Sampath Perera",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Sampath.Perera.png"
+            alt="Dr. Sampath Perera"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "International Relations Chair",
+    rank: 6,
+    speakers: [
+      {
+        name: "Dr. Akila Wijethunge",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Akila.Wijethunge.png"
+            alt="Dr. Akila Wijethunge"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Finance Committee",
+    rank: 7,
+    speakers: [
+      {
+        name: "Dr. Aruna Bandara",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Aruna.Bandara.png"
+            alt="Dr. Aruna Bandara"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+        university: "Committee Chair Person"
+      },
+      {
+        name: "Ms. Warunika Hippola",
+        image: (
+          <StaticImage
+            src="../images/committee/Ms.Warunika.Hippola.png"
+            alt="Ms. Warunika Hippola"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+        university: "IEEE Sri Lanka Section Representative"
+      },
+    ],
+  },
+  {
+    levelName: "Publicity Chair",
+    rank: 8,
+    speakers: [
+      {
+        name: "Dr. Sureka Thiruchittappalam",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Sureka.Thiruchittappalam.png"
+            alt="Dr. Sureka Thiruchittappalam"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Workshops and Special Sessions Co-Chairs",
+    rank: 9,
+    speakers: [
+      {
+        name: "Dr. Hiran Chathuranga",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Hiran.Chathuranga.png"
+            alt="Dr. Hiran Chathuranga"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Wageesha Manamperi",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Wageesha.Manamperi.png"
+            alt="Dr. Wageesha Manamperi"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Local Organizing Chairs",
+    rank: 11,
+    speakers: [
+      {
+        name: "Dr. Jayamali De Silva",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Jayamali.De.Silva.png"
+            alt="Dr. Jayamali De Silva"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Sunimal Rathnayake",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Sunimal.Rathnayake.png"
+            alt="Dr. Sunimal Rathnayake"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+      {
+        name: "Dr. Kasun De Silva",
+        image: (
+          <StaticImage
+            src="../images/committee/Dr.Kasun.De.Silva.png"
+            alt="Dr. Kasun De Silva"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Registration Chair",
+    rank: 12,
+    speakers: [
+      {
+        name: "Ms. Terashmila Lasagani",
+        image: (
+          <StaticImage
+            src="../images/committee/Mrs.K.A.T.Lasagani.png"
+            alt="Ms. Terashmila Lasagani"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Awards Chair",
+    rank: 13,
+    speakers: [
+      {
+        name: "Prof. Sanath Jayawardena",
+        image: (
+          <StaticImage
+            src="../images/committee/Prof.Sanath.Jayawardena.png"
+            alt="Prof. Sanath Jayawardena"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Conference secretary",
+    rank: 14,
+    speakers: [
+      {
+        name: "Ms. Chamodi Thisara",
+        image: (
+          <StaticImage
+            src="../images/committee/Ms.Chamodi.Thisara.png"
+            alt="Ms. Chamodi Thisara"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+  {
+    levelName: "Webmaster",
+    rank: 14,
+    speakers: [
+      {
+        name: "Mr. Vihanga Nimsara",
+        image: (
+          <StaticImage
+            src="../images/committee/Mr.Vihanga.Nimsara.png"
+            alt="Mr. Vihanga Nimsara"
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ),
+      },
+    ],
+  },
+];
+
+// --- Main Section Component ---
+const OrganizingCommittee = () => {
+  return (
+    <section className="w-full py-24 px-4 md:px-8 mt-16">
+      <div
+        className="fixed inset-0 -z-20"
+        style={{
+          background: `
+          radial-gradient(
+            circle at center,
+            rgb(58, 42, 78) 0%,
+            rgb(38, 28, 55) 45%,
+            rgb(22, 16, 35) 80%
+          )
+          `,
+        }}
+      />
+      <div className="max-w-7xl mx-auto">
+        {/* Main Page Title */}
+        <SectionHeader headerText="Organizing Committee" textClass="text-white" />
+
+        <SpeakerRankGraph speakerLevels={speakerLevels} />
+      </div>
+    </section>
+  );
+};
+
+export default OrganizingCommittee;
+
+export const Head = createPageHead({
+  title: "Organizing Committee - MERCon 2026",
+  description: "MERCon 2026 organizing committee.",
+});

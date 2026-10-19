@@ -1,0 +1,136 @@
+import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import SectionHeader from "../sectionHeader";
+
+const OrganizerSection = () => {
+  const glassCardClasses = `
+  group
+  relative
+  overflow-hidden
+  rounded-2xl
+  border border-white/20
+  bg-white
+  backdrop-blur-xl
+  p-2
+  h-64
+  md:h-72
+  flex items-center justify-center
+  shadow-xl shadow-black/20
+  transition-all duration-500 ease-out
+  hover:bg-white
+  hover:border-white/40
+`;
+
+  const imageProps: { className: string; objectFit: "contain"; placeholder?: "blurred" } = {
+    className:
+      "w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110",
+    objectFit: "contain",
+  };
+
+  const organizers = [
+    { image: <StaticImage src="../../images/logos/1.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/2.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/3.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+  ];
+
+  const financialSponsors = [
+    { image: <StaticImage src="../../images/logos/Dialog5GUltra-Vertical-Logo.png" alt="Dialog 5G Ultra" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/LTL-Holdings-Logo.svg" alt="LTL Holdings" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/Cinertia-Ceylon.png" alt="Cinertia-Ceylon" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-Logo.png" alt="IEEE-SL-Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+  ]
+
+  const techSponsors = [
+    { image: <StaticImage src="../../images/logos/IEEE-SL-CASS_CEDA.jpg" alt="IEEE-SL-CASS_CEDA" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-COMPUTER-SOCIETY.png" alt="IEEE-SL-COMPUTER-SOCIETY" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-ComSoc-new.png" alt="IEEE-SL-ComSoc" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-GRSS.png" alt="IEEE-SL-GRSS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-IAS.png" alt="IEEE-SL-IAS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-IES.png" alt="IEEE-SL-IES" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-PES.jpeg" alt="IEEE-SL-PES" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-RAS.png" alt="IEEE-SL-RAS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-SPS.jpg" alt="IEEE-SL-SPS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/MTT-S-SL.jpg" alt="MTT-S-SL" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/IEEE-SL-EMBS.png" alt="IEEE-SL-EMBS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/PELS.png" alt="PELS" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+  ];
+
+  const goldSponsors = [
+    { image: <StaticImage src="../../images/logos/1.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/1.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+    { image: <StaticImage src="../../images/logos/1.png" alt="Sponsor 1 Logo" className="w-full h-full transition-all duration-500 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110" objectFit="contain" /> },
+  ];
+
+  return (
+    <section className="w-full py-24 px-6 md:px-12 relative overflow-hidden">
+
+      
+
+      {/* Bottom Gradient Overlay */}
+      <div
+        className="absolute bottom-0 left-0 w-full h-[40vh] pointer-events-none -z-10"
+        style={{ background: "linear-gradient(to top, rgb(20, 10, 35), transparent)" }}
+      ></div>
+
+      <div className="container mx-auto relative mb-10 z-10">
+        <SectionHeader headerText="Organized By" />
+
+        {/* Glass Grid */}
+        <div className="flex flex-wrap justify-center gap-8 mt-10">
+          {organizers.map((org, index) => (
+            <div key={index} className={`${glassCardClasses} w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] relative group`}>
+              <div className="pointer-events-none absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:animate-shimmer rounded-3xl z-30"></div>
+              <div className="absolute inset-0 p-3 z-10">
+                <div className="w-full h-full rounded-xl flex items-center justify-center">{org.image}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-32">
+          <SectionHeader headerText="Financial Co-Sponsors" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-8 mt-10">
+          {financialSponsors.map((sponsor, index) => (
+            <div key={index} className={`${glassCardClasses} w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] relative group`}>
+              <div className="pointer-events-none absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:animate-shimmer rounded-3xl z-20"></div>
+              <div className="absolute inset-0 p-3 z-10">
+                <div className="w-full h-full rounded-xl flex items-center justify-center">{sponsor.image}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-32">
+          <SectionHeader headerText="Technical Co-Sponsors" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-8 mt-10">
+          {techSponsors.map((sponsor, index) => (
+            <div key={index} className={`${glassCardClasses} w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] relative group`}>
+              <div className="pointer-events-none absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:animate-shimmer rounded-3xl z-20"></div>
+              <div className="absolute inset-0 p-3 z-10">
+                <div className="w-full h-full rounded-xl flex items-center justify-center">{sponsor.image}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="mt-32">
+          <SectionHeader headerText="Gold Sponsors" />
+        </div>
+        <div className="flex flex-wrap justify-center gap-8 mt-10">
+          {goldSponsors.map((sponsor, index) => (
+            <div key={index} className={`${glassCardClasses} w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] relative group`}>
+              <div className="pointer-events-none absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:animate-shimmer rounded-3xl z-20"></div>
+              <div className="absolute inset-0 p-3 z-10">
+                <div className="w-full h-full rounded-xl flex items-center justify-center">{sponsor.image}</div>
+              </div>
+            </div>
+          ))}
+        </div> */}
+      </div>
+    </section>
+  );
+};
+
+export default OrganizerSection;

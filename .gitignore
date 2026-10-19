@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Gatsby
+.cache/
+public/
+src/gatsby-types.d.ts
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package lock (if using npm)
+# package-lock.json
