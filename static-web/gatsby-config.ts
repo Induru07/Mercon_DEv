@@ -1,9 +1,10 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/Mercon_DEv",
   siteMetadata: {
-    title: `Mercon 2026`,
-    siteUrl: `https://www.mercon.uom.lk`
+    title: `Mercon 2027`,
+    siteUrl: `https://Induru07.github.io/Mercon_DEv`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
