@@ -131,7 +131,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <div className="mb-10 pt-10">
             <StaticImage
-              src="../images/logo2026.png"
+              src="../images/logo2027.png"
               alt="MERCon 2027 Logo"
               className="w-full max-w-64 md:max-w-[400px] lg:max-w-[600px] h-auto mx-auto"
             />
