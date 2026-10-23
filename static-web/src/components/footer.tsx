@@ -123,8 +123,8 @@ export default function Footer() {
           </div>
           <div className="mt-5">
             <StaticImage
-              src="../images/logo2026.png"
-              alt="MERCon 2026 Logo"
+              src="../images/logo2027.png"
+              alt="MERCon 2027 Logo"
               className="max-w-44 h-auto opacity-90 hover:opacity-100 transition-opacity"
             />
           </div>
@@ -133,7 +133,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <div className="border-t border-primary-500/20 px-6 py-4 bg-[rgb(22,16,35)]/80">
-        <p className="text-center text-xs text-gray-400 tracking-wide">&copy;MERCon 2026 All rights reserved.</p>
+        <p className="text-center text-xs text-gray-400 tracking-wide">&copy;MERCon 2027 All rights reserved.</p>
       </div>
     </footer>
   );

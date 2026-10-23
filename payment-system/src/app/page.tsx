@@ -170,9 +170,9 @@ export default function Home() {
 
       {/* Right Column - Logo & Details */}
       <div className="hidden lg:flex lg:w-1/2 flex-col items-center justify-center p-12 border-l border-white/10 bg-black/20">
-         <Image src="/logo2026.png" width={400} height={400} alt="MERCon 2026 Logo" className="mb-8 w-64 h-auto" />
+         <Image src="/logo2027.png" width={400} height={400} alt="MERCon 2027 Logo" className="mb-8 w-64 h-auto" />
          <div className="text-center max-w-md">
-           <h2 className="text-2xl font-bold text-white mb-4">MERCon 2026 Payment Portal</h2>
+           <h2 className="text-2xl font-bold text-white mb-4">MERCon 2027 Payment Portal</h2>
            <p className="text-gray-300 leading-relaxed">
              Welcome to the official payment portal for the 12th International Multidisciplinary Engineering Research Conference. Please login or register to complete your conference registration and payment securely.
            </p>

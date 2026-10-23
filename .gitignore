@@ -3,7 +3,7 @@ node_modules/
 
 # Gatsby
 .cache/
-public/
+static-web/public/
 src/gatsby-types.d.ts
 
 # Build output

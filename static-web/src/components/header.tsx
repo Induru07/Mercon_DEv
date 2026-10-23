@@ -257,8 +257,8 @@ export default function Header({ location }: { location?: any }) {
           {/* Logo */}
           <GatsbyLink to="/" className="shrink-0 relative z-50">
             <StaticImage
-              src="../images/logo2026.png"
-              alt="MERCon 2026 Logo"
+              src="../images/logo2027.png"
+              alt="MERCon 2027 Logo"
               className="w-40 md:w-52 text-md para h-auto object-contain"
               placeholder="none"
               loading="eager"

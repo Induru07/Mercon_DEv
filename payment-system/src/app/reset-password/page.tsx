@@ -161,7 +161,7 @@ export default function ResetPasswordPage() {
       <div className="w-full max-w-md bg-white/5 backdrop-blur-md rounded-2xl shadow-xl border border-white/10 p-8 my-8 relative z-10">
         <div className="text-center mb-6">
           <Link href="/" className="inline-block mb-4">
-            <Image src="/logo2026.png" width={160} height={160} alt="MERCon 2026 Logo" className="mx-auto h-16 w-auto" />
+            <Image src="/logo2027.png" width={160} height={160} alt="MERCon 2027 Logo" className="mx-auto h-16 w-auto" />
           </Link>
           <h1 className="text-2xl topic text-white">Password Reset</h1>
           <p className="text-gray-400 para text-sm mt-1">

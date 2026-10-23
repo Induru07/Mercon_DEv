@@ -54,9 +54,9 @@ export default async function ReceiptPage(props: { searchParams: Promise<{ [key:
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start bg-[#081a12] p-8 border-b-4 border-primary-500 gap-6 sm:gap-4">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            <img src="/logo2026.png" alt="MERCon Logo" className="w-20 h-auto shrink-0" />
+            <img src="/logo2027.png" alt="MERCon Logo" className="w-20 h-auto shrink-0" />
             <div>
-              <h1 className="text-3xl font-bold text-white">MERCon 2026</h1>
+              <h1 className="text-3xl font-bold text-white">MERCon 2027</h1>
               <p className="text-sm text-primary-200 mt-1 max-w-sm">12th International Multidisciplinary Engineering Research Conference</p>
             </div>
           </div>
